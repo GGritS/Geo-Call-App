@@ -195,3 +195,11 @@ const removeUserFromTheVideoRoom = (socketId, roomId) => {
 
   broadcastVideoRooms();
 };
+
+/// testing
+app.post("/test", (res, req) => {
+  return res.send({
+    success: true,
+    message: "Home-home",
+  });
+});
