@@ -7,6 +7,7 @@ export const LoginInput = ({ userName, setUserName }) => {
       value={userName}
       onChange={handleValueChange}
       className="l_page_input"
+      placeholder="Please enter your name"
     />
   );
 };

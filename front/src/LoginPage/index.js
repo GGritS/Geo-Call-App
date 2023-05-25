@@ -69,11 +69,22 @@ export const LoginPage = () => {
     <div className="l_page_main_container">
       <div className="l_page_box">
         <Logo />
-        <LoginInput userName={username} setUserName={setUsername} />
-        <LoginButton
-          disabled={isUserNameValid(username) || locationErrorOccurred}
-          onClickHandler={handleLogin}
-        />
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "10px",
+          }}
+        >
+          <h2 style={{ color: "white" }}>Please enter your name </h2>
+          <LoginInput userName={username} setUserName={setUsername} />
+          <LoginButton
+            disabled={isUserNameValid(username) || locationErrorOccurred}
+            onClickHandler={handleLogin}
+          />
+        </div>
       </div>
     </div>
   );
